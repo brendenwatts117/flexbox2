@@ -130,7 +130,11 @@ section header {
   height: 300px;
   display: flex;
   justify-content: center;
+  flex-flow: column;
+  align-items: center;
+  padding: 3px;
   width: 30%;
+  text-align: justify;
 }
 
 

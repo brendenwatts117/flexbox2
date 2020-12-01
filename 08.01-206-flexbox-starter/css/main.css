@@ -14,7 +14,6 @@ html {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
-
 }
 
 /*
@@ -96,54 +95,63 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-/*Large Background Image*/
 html {
-    background: url(../img/deskspace.jpg) no-repeat center center fixed;
-    background-size: cover;
-   /* set height to 100% - these are important for allowing content to vertically align */
-    height: 100%;
+  background-color: #fff;
+  height: 100%;
+  width: 100%;
 }
 
 body {
-    /* set height to 100% - these are important for allowing content to vertically align */
-    height: 100%;
+  font-family: 'Source Sans Pro', sans-serif;
+  padding: 0 2em;
+  font-size: 1.25em;
+  height: 100%;
+  color: #fff;
+  
 }
 
-.wrapper {
-    /* set the display to flex and use the justify-content & align-items properties to center all child elements on the page */
-    margin: 0;
-    height: 100%;
-    width: 100%;
+header,
+footer {
+  background-color: #222;
+  height: 80px;
+  width: 100%;
+}
+
+main {
+  background-color: #ccc;
+  height: 250px;
+  width: 100%;
+}
+
+header,
+footer,
+main {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
-#content {
-    /* set the display to flex and use the justify-content & align-items properties to center the text within the div*/
-    background: #222;
-    background:rgba(0,0,0,0.7);
-    color: #fff;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 300;
-    font-size: 1.25em;
-    line-height: 1.5em;
-    border-radius: 10px;
-    padding: 0px 30px;
-    width: 300px;
-    height: 300px;
+.flex-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap;
+  justify-content:space-between;
+
 }
 
-#content p span {
-    font-family: 'Times New Roman', sans-serif;
+.flex-items {
+  color: #fff;
+  line-height: 1.5em;
+  font-size: 1.6em;
+  background-color: #f16059;
+  width: 30%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-
-
-
 
 /* ==========================================================================
    Helper classes
@@ -225,8 +233,16 @@ body {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+/* If you'd like to try a different layout on Desktop and larger screens: */
+@media (min-width: 1200px) {
+  #div-1,
+  #div-2{
+      /* set your flex value to 1 50% */
+  }
+
+  #div-3 {
+    /* set your flex value to 1 100% */
+  }
 }
 
 @media print,
