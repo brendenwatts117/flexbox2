@@ -95,9 +95,9 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-
 html {
-  background-color: #fff;
+  background: url( https://www.actuaries.digital/wp-content/uploads/2019/07/home-office-960x721.jpg) no-repeat;
+  background-size: cover;
   height: 100%;
 }
 
@@ -110,7 +110,12 @@ body {
 /* ================Header Section======================== */
 section header {
     text-transform: uppercase;
+    
 }
+section #topbio {
+    background-color: #dbdadad7;
+}
+/* ==============Main Section================= */
 
 .wrapper {
   /*add display:flex and set justify-content to space-between*/
@@ -118,15 +123,20 @@ section header {
   display: flex;
   flex-flow: wrap;
   justify-content: space-between;
-  border: 20px solid black;
+
+}
+.wrapper h2 {
+    color: black;
+    font-size: 2em;
+
 }
 
 .div-1, .div-2, .div-3 {
   /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
-  color: #fff;
+  color: black;
   line-height: 1.5em;
-  font-size: .5em;
-  background-color: #f16059;
+  font-size: .8em;
+  background-color: #dbdadad7;
   height: 300px;
   display: flex;
   justify-content: center;
@@ -137,6 +147,13 @@ section header {
   text-align: justify;
 }
 
+/* ===============Footer Section============ */
+
+section footer {
+    background-color: #dbdadad7;
+    color: black;
+    
+}
 
 
 
